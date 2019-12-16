@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PassTool</string>
+    <string name="digits">位数</string>
+    <string name="generate_btn_text">生成</string>
+    <string name="lower_case">小写</string>
+    <string name="no_password_snack">没有密码生成</string>
+    <string name="password_copied">密码已复制到剪贴板</string>
+    <string name="password_fair">此密码强度很一般</string>
+    <string name="password_good">这个密码强度好</string>
+    <string name="password_length">密码长度</string>
+    <string name="password_strong">此密码强度很强</string>
+    <string name="password_very_strong">这个密码强度很强</string>
+    <string name="password_weak">此密码强度很弱</string>
+    <string name="symbols">符号</string>
+    <string name="upper_case">大写</string>
+</resources>

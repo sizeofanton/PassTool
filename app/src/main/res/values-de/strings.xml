@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PassTool</string>
+    <string name="digits">Ziffern</string>
+    <string name="generate_btn_text">Generieren</string>
+    <string name="lower_case">Kleinbuchstaben</string>
+    <string name="no_password_snack">Kein Passwort generiert</string>
+    <string name="password_copied">Passwort in die Zwischenablage kopiert</string>
+    <string name="password_fair">Diese Passwortstärke ist fair</string>
+    <string name="password_good">Diese Passwortstärke ist gut</string>
+    <string name="password_length">Passwortlänge</string>
+    <string name="password_strong">Diese Passwortstärke ist stark</string>
+    <string name="password_very_strong">Diese Passwortstärke ist sehr stark</string>
+    <string name="password_weak">Diese Passwortstärke ist schwach</string>
+    <string name="symbols">Symbole</string>
+    <string name="upper_case">Großbuchstaben</string>
+</resources>

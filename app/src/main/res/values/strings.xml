@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name" translatable="false">PassTool</string>
+    <string name="generate_btn_text">Generate</string>
+    <string name="no_password_snack">No password generated</string>
+    <string name="password_copied">Password copied to clipboard</string>
+    <string name="digits">Digits</string>
+    <string name="lower_case">Lower Case</string>
+    <string name="symbols">Symbols</string>
+    <string name="password_length">Password length</string>
+    <string name="upper_case">Upper Case</string>
+    <string name="password_weak">This password strength is weak</string>
+    <string name="password_fair">This password strength is fair</string>
+    <string name="password_good">This password strength is good</string>
+    <string name="password_strong">This password strength is strong</string>
+    <string name="password_very_strong">This password strength is very strong</string>
+    <string name="illegal_parameters">Illegal parameters configuration</string>
+</resources>

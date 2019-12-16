@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PassTool</string>
+    <string name="digits">Цифры</string>
+    <string name="generate_btn_text">Сгенерировать</string>
+    <string name="lower_case">Нижний регистр</string>
+    <string name="no_password_snack">Пароль не сгенерирован</string>
+    <string name="password_copied">Пароль скопирован в буфер обмена</string>
+    <string name="password_fair">Этот пароль достаточно слабый</string>
+    <string name="password_good">Этот пароль неплохой</string>
+    <string name="password_length">Длина пароля</string>
+    <string name="password_strong">Этот пароль надежный</string>
+    <string name="password_weak">Этот пароль слабый</string>
+    <string name="password_very_strong">Этот пароль очень надежный</string>
+    <string name="symbols">Символы</string>
+    <string name="upper_case">Верхний регистр</string>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PassTool</string>
+    <string name="digits">Dígitos</string>
+    <string name="generate_btn_text">Gerar</string>
+    <string name="lower_case">Minúsculas</string>
+    <string name="no_password_snack">Nenhuma senha gerada</string>
+    <string name="password_copied">Senha copiada para a área de transferência</string>
+    <string name="password_fair">A força dessa senha é justa</string>
+    <string name="password_good">A força dessa senha é boa</string>
+    <string name="password_length">Comprimento da senha</string>
+    <string name="password_very_strong">A força dessa senha é muito forte</string>
+    <string name="password_strong">A força dessa senha é forte</string>
+    <string name="password_weak">A força desta senha é fraca</string>
+    <string name="symbols">Símbolos</string>
+    <string name="upper_case">Maiúsculas</string>
+</resources>

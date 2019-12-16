@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PassTool</string>
+    <string name="digits">桁</string>
+    <string name="generate_btn_text">パスワードを生成する</string>
+    <string name="lower_case">小文字</string>
+    <string name="no_password_snack">パスワードは生成されません</string>
+    <string name="password_copied">クリップボードにコピーされたパスワード</string>
+    <string name="password_fair">このパスワードの強度は普通です</string>
+    <string name="password_good">このパスワードの強度は良好です</string>
+    <string name="password_length">パスワードの長さ</string>
+    <string name="password_strong">このパスワードの強度は強いです</string>
+    <string name="password_very_strong">このパスワードの強度は非常に強いです</string>
+    <string name="password_weak">このパスワードの強度は弱いです</string>
+    <string name="symbols">記号</string>
+    <string name="upper_case">大文字</string>
+</resources>

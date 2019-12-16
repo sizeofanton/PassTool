@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PassTool</string>
+    <string name="upper_case">Majuscules</string>
+    <string name="symbols">Symboles</string>
+    <string name="password_weak">Cette force de mot de passe est faible</string>
+    <string name="password_very_strong">Cette force de mot de passe est très forte</string>
+    <string name="password_strong">Cette force de mot de passe est forte</string>
+    <string name="password_length">Longueur du mot de passe</string>
+    <string name="password_good">Cette force de mot de passe est bonne</string>
+    <string name="password_fair">Cette force de mot de passe est juste</string>
+    <string name="password_copied">Mot de passe copié dans le presse-papiers</string>
+    <string name="no_password_snack">Aucun mot de passe généré</string>
+    <string name="lower_case">Minuscules</string>
+    <string name="generate_btn_text">Produire</string>
+    <string name="digits">Chiffres</string>
+</resources>

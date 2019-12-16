@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PassTool</string>
+    <string name="digits">अंक</string>
+    <string name="generate_btn_text">उत्पन्न</string>
+    <string name="lower_case">लोअर केस</string>
+    <string name="no_password_snack">कोई पासवर्ड जनरेट नहीं हुआ</string>
+    <string name="password_copied">यह पासवर्ड की शक्ति उचित है</string>
+    <string name="password_fair">यह पासवर्ड की शक्ति अच्छी है</string>
+    <string name="password_good">यह पासवर्ड की शक्ति अच्छी है</string>
+    <string name="password_length">पारण शब्द लम्बाई</string>
+    <string name="password_strong">यह पासवर्ड स्ट्रेंथ मजबूत है</string>
+    <string name="password_very_strong">यह पासवर्ड की शक्ति बहुत मजबूत है</string>
+    <string name="password_weak">यह पासवर्ड की शक्ति कमजोर है</string>
+    <string name="symbols">प्रतीक</string>
+    <string name="upper_case">अपरकेस</string>
+</resources>
