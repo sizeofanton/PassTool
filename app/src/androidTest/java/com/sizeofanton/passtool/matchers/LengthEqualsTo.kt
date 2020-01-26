@@ -5,9 +5,7 @@ import android.widget.TextView
 import org.hamcrest.Description
 import org.junit.internal.matchers.TypeSafeMatcher
 
-class LengthEqualsTo(val len: Int) : TypeSafeMatcher<View>(){
-
-
+class LengthEqualsTo(val len: Int) : TypeSafeMatcher<View>() {
     override fun matchesSafely(item: View?): Boolean {
         return ((item as TextView).length() == len)
     }

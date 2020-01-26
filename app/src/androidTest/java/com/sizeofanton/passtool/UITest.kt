@@ -1,6 +1,5 @@
 package com.sizeofanton.passtool
 
-
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.action.ViewActions.*
 import androidx.test.espresso.assertion.ViewAssertions.matches
@@ -16,28 +15,26 @@ import org.junit.runner.RunWith
 
 @RunWith(AndroidJUnit4::class)
 @LargeTest
-class UITest{
+class UITest {
 
     @get:Rule var activityScenarioRule = activityScenarioRule<MainActivity>()
 
-
     @Test
-    fun clickInfoTextView(){
+    fun clickInfoTextView() {
         onView(withId(R.id.buttonInfo)).perform(click())
         onView(withText(R.string.no_password_snack))
-            .check(matches(isDisplayed()));
+            .check(matches(isDisplayed()))
 
         Thread.sleep(6000)
 
         onView(withId(R.id.buttonGenerate)).perform(click())
         onView(withId(R.id.buttonInfo)).perform(click())
         onView(withText(R.string.password_fair))
-            .check(matches(isDisplayed()));
-
+            .check(matches(isDisplayed()))
     }
 
     @Test
-    fun clickSaveTextView(){
+    fun clickSaveTextView() {
         onView(withId(R.id.buttonSave)).perform(click())
         onView(withText(R.string.no_password_snack))
             .check(matches(isDisplayed()))
@@ -51,22 +48,21 @@ class UITest{
     }
 
     @Test
-    fun clickButton(){
+    fun clickButton() {
         onView(withId(R.id.buttonGenerate)).perform(click())
         onView(withId(R.id.tvPassword)).check(matches(not(withText(""))))
     }
 
     @Test
-    fun clickSwitches(){
+    fun clickSwitches() {
         onView(withId(R.id.switchUpperCase)).perform(click()).check(matches(isChecked()))
         onView(withId(R.id.switchLowerCase)).perform(click()).check(matches(not(isChecked())))
         onView(withId(R.id.switchDigits)).perform(click()).check(matches(not(isChecked())))
         onView(withId(R.id.switchSymbols)).perform(click()).check(matches(isChecked()))
-
     }
 
     @Test
-    fun passwordLength(){
+    fun passwordLength() {
         onView(withId(R.id.buttonGenerate)).perform(click())
         onView(withId(R.id.tvPassword)).check(matches(LengthEqualsTo(6)))
 
@@ -74,6 +70,4 @@ class UITest{
         onView(withId(R.id.buttonGenerate)).perform(click())
         onView(withId(R.id.tvPassword)).check(matches(LengthEqualsTo(30)))
     }
-
-
 }

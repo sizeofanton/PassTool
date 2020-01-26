@@ -1,11 +1,11 @@
 package com.sizeofanton.passtool
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.SeekBar
+import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.snackbar.Snackbar
-import kotlinx.android.synthetic.main.activity_main.*
 import java.lang.IllegalArgumentException
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -15,8 +15,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         initUI()
-        if (savedInstanceState != null){
-            numberSeekBar.progress = savedInstanceState.getInt("length",6)
+        if (savedInstanceState != null) {
+            numberSeekBar.progress = savedInstanceState.getInt("length", 6)
             switchUpperCase.isChecked = savedInstanceState.getBoolean("hasUpper", false)
             switchLowerCase.isChecked = savedInstanceState.getBoolean("hasLower", true)
             switchDigits.isChecked = savedInstanceState.getBoolean("hasDigits", true)
@@ -24,11 +24,9 @@ class MainActivity : AppCompatActivity() {
             tvPassword.text = savedInstanceState.getString("generatedPassword", "")
         }
         model = MainModel(this)
-
     }
 
-
-    private fun initUI(){
+    private fun initUI() {
         initNumberSeekBarListener()
         initGenerateButtonListener()
         initSaveButtonListener()
@@ -36,28 +34,23 @@ class MainActivity : AppCompatActivity() {
         setDefaultPasswordParameters()
     }
 
-
-    private fun initNumberSeekBarListener(){
+    private fun initNumberSeekBarListener() {
         numberSeekBar?.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
 
             override fun onStopTrackingTouch(p0: SeekBar?) {
-
             }
 
             override fun onStartTrackingTouch(p0: SeekBar?) {
-
             }
 
             // Kludge to set min value
             override fun onProgressChanged(seek: SeekBar, progress: Int, fromUser: Boolean) {
                 tvSeekValue.setText("${progress + 4}")
             }
-
-
         })
     }
 
-    private fun initGenerateButtonListener(){
+    private fun initGenerateButtonListener() {
         buttonGenerate.setOnClickListener {
             val len = numberSeekBar.progress + 4
             val hasUpper = switchUpperCase.isChecked
@@ -68,33 +61,29 @@ class MainActivity : AppCompatActivity() {
             try {
                 val password = model.generate(len, hasUpper, hasLower, hasDigit, hasSymbols)
                 tvPassword.text = password
-            } catch (e: IllegalArgumentException){
+            } catch (e: IllegalArgumentException) {
                 showSnackbarIllegalArgument()
             }
-
         }
     }
 
-    private fun initSaveButtonListener(){
+    private fun initSaveButtonListener() {
         buttonSave.setOnClickListener {
-            if (tvPassword.text.isEmpty()){
+            if (tvPassword.text.isEmpty()) {
 
                 showSnackbarNoPassword()
                 return@setOnClickListener
             }
 
-
             model.copyPasswordToClipboard(tvPassword.text.toString())
             val snackbar = Snackbar.make(layout, getString(R.string.password_copied), Snackbar.LENGTH_SHORT)
             snackbar.show()
-
-
         }
     }
 
-    private fun initButtonInfoListener(){
+    private fun initButtonInfoListener() {
         buttonInfo.setOnClickListener {
-            if (tvPassword.text.isEmpty()){
+            if (tvPassword.text.isEmpty()) {
                 showSnackbarNoPassword()
                 return@setOnClickListener
             }
@@ -102,14 +91,13 @@ class MainActivity : AppCompatActivity() {
             try {
                 val strength = model.measurePasswordStrength(tvPassword.text.toString())
                 showSnackbarPasswordStrength(strength)
-            } catch (e: IllegalArgumentException){
+            } catch (e: IllegalArgumentException) {
                 showSnackbarIllegalArgument()
             }
-
         }
     }
 
-    private fun showSnackbarNoPassword(){
+    private fun showSnackbarNoPassword() {
         val snackbar: Snackbar = Snackbar.make(
             layout,
             getString(R.string.no_password_snack),
@@ -119,24 +107,23 @@ class MainActivity : AppCompatActivity() {
         snackbar.show()
     }
 
-    private fun showSnackbarPasswordStrength(strength: Int){
+    private fun showSnackbarPasswordStrength(strength: Int) {
         val snackbar: Snackbar = Snackbar.make(
             layout,
-            when (strength){
+            when (strength) {
                     0 -> getString(R.string.password_weak)
                     1 -> getString(R.string.password_fair)
                     2 -> getString(R.string.password_good)
                     3 -> getString(R.string.password_strong)
                     4 -> getString(R.string.password_very_strong)
                     else -> "dumb"
-
             },
             Snackbar.LENGTH_SHORT
         )
         snackbar.show()
     }
 
-    private fun showSnackbarIllegalArgument(){
+    private fun showSnackbarIllegalArgument() {
         val snackbar: Snackbar = Snackbar.make(
             layout,
             getString(R.string.illegal_parameters),
@@ -145,12 +132,11 @@ class MainActivity : AppCompatActivity() {
         snackbar.show()
     }
 
-    private fun setDefaultPasswordParameters(){
+    private fun setDefaultPasswordParameters() {
         numberSeekBar.progress = 2 // Actually 6, see onProgressChanged()
         switchLowerCase.isChecked = true
         switchDigits.isChecked = true
     }
-
 
     override fun onSaveInstanceState(outState: Bundle) {
         outState.putInt("length", numberSeekBar.progress)
@@ -162,10 +148,4 @@ class MainActivity : AppCompatActivity() {
 
         super.onSaveInstanceState(outState)
     }
-
 }
-
-
-
-
-
