@@ -95,13 +95,16 @@ class MainActivity : AppCompatActivity() {
     private fun initButtonInfoListener(){
         buttonInfo.setOnClickListener {
             if (tvPassword.text.isEmpty()){
-
                 showSnackbarNoPassword()
                 return@setOnClickListener
             }
 
-            val strength = model.measurePasswordStrength(tvPassword.text.toString())
-            showSnackbarPasswordStrength(strength)
+            try {
+                val strength = model.measurePasswordStrength(tvPassword.text.toString())
+                showSnackbarPasswordStrength(strength)
+            } catch (e: IllegalArgumentException){
+                showSnackbarIllegalArgument()
+            }
 
         }
     }
