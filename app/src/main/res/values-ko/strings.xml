@@ -14,4 +14,5 @@
     <string name="password_weak">이 비밀번호 강도는 약합니다</string>
     <string name="symbols">기호</string>
     <string name="upper_case">대문자</string>
+    <string name="illegal_parameters">잘못된 매개 변수 구성</string>
 </resources>

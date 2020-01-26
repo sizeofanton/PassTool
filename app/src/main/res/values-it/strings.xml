@@ -14,4 +14,5 @@
     <string name="password_weak">Questo livello di sicurezza della password è debole</string>
     <string name="symbols">Simboli</string>
     <string name="upper_case">Maiuscolo</string>
+    <string name="illegal_parameters">Configurazione parametri illegali</string>
 </resources>

@@ -14,4 +14,5 @@
     <string name="password_very_strong">Этот пароль очень надежный</string>
     <string name="symbols">Символы</string>
     <string name="upper_case">Верхний регистр</string>
+    <string name="illegal_parameters">Неверные параметры</string>
 </resources>

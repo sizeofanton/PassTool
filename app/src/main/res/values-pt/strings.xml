@@ -14,4 +14,5 @@
     <string name="password_weak">A força desta senha é fraca</string>
     <string name="symbols">Símbolos</string>
     <string name="upper_case">Maiúsculas</string>
+    <string name="illegal_parameters">Configuração de parâmetros ilegais</string>
 </resources>

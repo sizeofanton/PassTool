@@ -14,4 +14,5 @@
     <string name="password_weak">यह पासवर्ड की शक्ति कमजोर है</string>
     <string name="symbols">प्रतीक</string>
     <string name="upper_case">अपरकेस</string>
+    <string name="illegal_parameters">अवैध पैरामीटर कॉन्फ़िगरेशन</string>
 </resources>

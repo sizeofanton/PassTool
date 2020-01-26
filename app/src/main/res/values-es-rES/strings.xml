@@ -14,4 +14,5 @@
     <string name="password_weak">Esta contraseña es débil</string>
     <string name="symbols">Los símbolos</string>
     <string name="upper_case">Mayúscula</string>
+    <string name="illegal_parameters">Configuración de parámetros ilegales</string>
 </resources>

@@ -14,4 +14,5 @@
     <string name="password_weak">此密码强度很弱</string>
     <string name="symbols">符号</string>
     <string name="upper_case">大写</string>
+    <string name="illegal_parameters">非法参数配置</string>
 </resources>

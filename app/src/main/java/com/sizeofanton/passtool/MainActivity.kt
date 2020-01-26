@@ -48,8 +48,9 @@ class MainActivity : AppCompatActivity() {
 
             }
 
+            // Kludge to set min value
             override fun onProgressChanged(seek: SeekBar, progress: Int, fromUser: Boolean) {
-                tvSeekValue.setText("$progress")
+                tvSeekValue.setText("${progress + 4}")
             }
 
 
@@ -58,7 +59,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun initGenerateButtonListener(){
         buttonGenerate.setOnClickListener {
-            val len = numberSeekBar.progress
+            val len = numberSeekBar.progress + 4
             val hasUpper = switchUpperCase.isChecked
             val hasLower = switchLowerCase.isChecked
             val hasDigit = switchDigits.isChecked
@@ -142,7 +143,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setDefaultPasswordParameters(){
-        numberSeekBar.progress = 6
+        numberSeekBar.progress = 2 // Actually 6, see onProgressChanged()
         switchLowerCase.isChecked = true
         switchDigits.isChecked = true
     }
