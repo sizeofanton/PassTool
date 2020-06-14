@@ -1,6 +1,5 @@
 # PassTool
-[![License: GPL](https://img.shields.io/badge/License-GPL-blue)](https://gnu.org/licenses/gpl-3.0.txt)
-
+[![License: GPL](https://img.shields.io/badge/License-GPL-blue)](https://gnu.org/licenses/gpl-3.0.txt)[![Build Status](https://travis-ci.com/sizeofanton/PassTool.svg?branch=master)](https://travis-ci.com/sizeofanton/PassTool)
 
 
 Simple password generator for Android. Generates passwords of a given length using lowercase, uppercase letters, characters and numbers. It can save the generated passwords to the clipboard and evaluate their strength.
