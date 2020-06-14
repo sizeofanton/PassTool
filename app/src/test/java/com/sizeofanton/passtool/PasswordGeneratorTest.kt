@@ -8,16 +8,16 @@ import java.lang.IllegalArgumentException
 class PasswordGeneratorTest {
     @Test
     fun test_passwordLength() {
-        var p = PasswordGenerator(len=4)
+        var p = PasswordGenerator(len = 4)
         assertEquals(4, p.generate().length)
 
-        p = PasswordGenerator(len=8)
+        p = PasswordGenerator(len = 8)
         assertEquals(8, p.generate().length)
 
-        p = PasswordGenerator(len=16)
+        p = PasswordGenerator(len = 16)
         assertEquals(16, p.generate().length)
 
-        p = PasswordGenerator(len=32)
+        p = PasswordGenerator(len = 32)
         assertEquals(32, p.generate().length)
     }
 

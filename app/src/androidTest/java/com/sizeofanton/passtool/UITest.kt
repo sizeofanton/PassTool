@@ -44,7 +44,7 @@ class UITest {
         onView(withId(R.id.buttonGenerate)).perform(click())
         onView(withId(R.id.buttonSave)).perform(click())
         onView(withText(R.string.password_copied))
-            .check(matches(isDisplayed()));
+            .check(matches(isDisplayed()))
     }
 
     @Test
